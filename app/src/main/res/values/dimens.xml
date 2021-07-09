@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--TextInputLayout-->
+    <dimen name="boxCornerRadius">24dp</dimen>
+
+    <!--layout_send_message_container-->
+    <dimen name="layout_send_message_container_padding">12dp</dimen>
+
+    <!--message_items-->
+    <dimen name="message_item_image_size">52dp</dimen>
+    <dimen name="message_item_padding">10dp</dimen>
+</resources>

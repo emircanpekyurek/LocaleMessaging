@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LoadingDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="RoundedTextInputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopEnd">@dimen/boxCornerRadius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/boxCornerRadius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/boxCornerRadius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/boxCornerRadius</item>
+    </style>
+
+    <style name="SingleLineAutoTextSizeStyle">
+        <item name="autoSizeMaxTextSize">21sp</item>
+        <item name="autoSizeMinTextSize">8sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="MessageItemImageStyle">
+        <item name="android:layout_width">@dimen/message_item_image_size</item>
+        <item name="android:layout_height">@dimen/message_item_image_size</item>
+        <item name="android:layout_marginTop">@dimen/message_item_padding</item>
+        <item name="android:translationY">@dimen/message_item_padding</item>
+    </style>
+
+    <style name="MessageItemTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MessageItemMessageStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/message_item_padding</item>
+        <item name="android:background">@drawable/bg_message_text_item</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="layout_goneMarginTop">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="layout_constraintWidth_max">wrap</item>
+        <item name="layout_constraintWidth_percent">0.6</item>
+    </style>
+
+</resources>

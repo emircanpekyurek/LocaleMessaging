@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.pekyurek.emircan.presentation.ui.main.MainViewModel" />
+    </data>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".presentation.ui.main.MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/RoundedTextInputLayoutStyle"
+            errorText="@{viewModel.errorNicknameResId == null ? null : context.getString(viewModel.errorNicknameResId)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_nickname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNickname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="@{() -> viewModel.loginButtonClicked(etNickname.getText().toString().trim())}"
+            android:text="@string/label_continue"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="@{() -> viewModel.deleteDatabaseData()}"
+            android:text="@string/delete_database_data" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

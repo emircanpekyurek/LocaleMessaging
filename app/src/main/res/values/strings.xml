@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Emircan</string>
+
+    <!--exceptions-->
+    <string name="exception_service_null_response">Null Response</string>
+    <string name="exception_service_generic_error_message">Error!</string>
+    <string name="exception_service_fail_response_with_status">Error! Response Code : %1$d</string>
+    <string name="exception_title_generic_error">Error</string>
+    <string name="exception_title_service_error">Service Error</string>
+
+    <!--common_labels-->
+    <string name="label_nickname">Nickname</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_leave">Leave</string>
+    <string name="label_send">Send</string>
+
+    <!--warning_messages-->
+    <string name="min_three_character_must_be_entered">Minimum 3 characters must be entered</string>
+    <string name="fill_in_the_blank">Fill in the blank</string>
+    <string name="user_not_found">Kullanıcı bulunamadı.</string>
+    <string name="enter_your_message">Enter your message</string>
+
+    <!--activity_main-->
+    <string name="delete_database_data">Delete Database Data</string>
+
+</resources>
